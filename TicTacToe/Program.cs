@@ -135,7 +135,9 @@ namespace TicTacToe
          
             Console.WriteLine("Well done! Player " + winningPlayer + " has won the game!");
             WriteBoard();
-            Console.WriteLine("Now ending the game...");
+            Console.WriteLine("Now ending the game, press the enter key to close...");
+            Console.ReadLine();
+
             Environment.Exit(0);
         }
 
@@ -143,7 +145,9 @@ namespace TicTacToe
         {
             Console.WriteLine("The game is a draw!");
             WriteBoard();
-            Console.WriteLine("Ending the game...");
+            Console.WriteLine("Now ending the game, press the enter key to close...");
+            Console.ReadLine();
+
             Environment.Exit(0);
         }
 
